@@ -1,3 +1,4 @@
+import 'package:animal_planet_app/screens/landing_screen.dart';
 import 'package:flutter/material.dart';
 
 void main() => runApp(MyApp());
@@ -11,11 +12,13 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: Scaffold(
-        body: Container(
-          
-        ),
-      )
-    );
-  }
-}
+      home: LandingScreen(),
+          );
+        }
+      }
+      
+      
+
+      
+  
+

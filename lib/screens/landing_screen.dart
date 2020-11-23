@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 
-class LardingScreen extends StatelessWidget {
+class LandingScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body:
-    )
+      body: Image.asset("assets/elephant.jpg"),
+    );
   }
 }
