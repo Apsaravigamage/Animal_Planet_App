@@ -49,6 +49,26 @@ class LandingScreen extends StatelessWidget {
                   ),
             ],
           ),
+          Positioned(
+            bottom: -30,
+            right: -30,
+            child: Container(
+              width: 100,
+              height: 100,
+              decoration: BoxDecoration(
+                shape: BoxShape.circle, 
+                color: Color(0xFFD3A070).withOpacity(0.8),
+              ),
+            child:Align(
+             alignment: Alignment(-0.4,-0.4),
+             child: Icon(
+              Icons.arrow_forward,
+              color:Colors.white,
+              size:40,
+             ),
+            ),
+            )
+          )
         ],
       ),
     );
