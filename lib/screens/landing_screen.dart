@@ -1,4 +1,5 @@
 import 'package:animal_planet_app/common/custom_app_bar.dart';
+import 'package:animal_planet_app/screens/choose_plan_screen.dart';
 import 'package:animal_planet_app/utlls/string.dart';
 import 'package:animal_planet_app/utlls/text_styles.dart';
 import 'package:flutter/material.dart';
@@ -52,21 +53,30 @@ class LandingScreen extends StatelessWidget {
           Positioned(
             bottom: -30,
             right: -30,
-            child: Container(
-              width: 100,
-              height: 100,
-              decoration: BoxDecoration(
-                shape: BoxShape.circle, 
-                color: Color(0xFFD3A070).withOpacity(0.8),
+            child: InkWell(
+              onTap: () {
+                Navigator.of(context).push(
+                  MaterialPageRoute(
+                    builder: (context) => ChoosePlanScreen(),
+                  ),
+                );
+              },
+              child: Container(
+                width: 100,
+                height: 100,
+                decoration: BoxDecoration(
+                  shape: BoxShape.circle, 
+                  color: Color(0xFFD3A070).withOpacity(0.8),
+                ),
+              child:Align(
+               alignment: Alignment(-0.4,-0.4),
+               child: Icon(
+                Icons.arrow_forward,
+                color:Colors.white,
+                size:40,
+               ),
               ),
-            child:Align(
-             alignment: Alignment(-0.4,-0.4),
-             child: Icon(
-              Icons.arrow_forward,
-              color:Colors.white,
-              size:40,
-             ),
-            ),
+              ),
             )
           )
         ],
