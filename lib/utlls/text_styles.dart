@@ -34,4 +34,10 @@ class TextStyles {
      color: Colors.white,
      fontFamily: 'Ubuntu',
    );
+    static final TextStyle headingTextStyle = TextStyle(
+     fontSize: 24,
+     fontWeight: FontWeight.w600,
+     color: Colors.white,
+     fontFamily: 'Ubuntu',
+   );
  }
