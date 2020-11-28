@@ -42,6 +42,18 @@ class ChoosePlanScreen extends StatelessWidget {
               ),
             ],
           ),
+          Positioned(
+            bottom: 0,
+            
+            left: 16,
+            child: Text(
+                  Strings.LAST_STEP_TO_ENJOY, 
+                  style: TextStyles.buttonTextStyle,
+                ),
+
+              
+             )
+            
         ],
       ),
     );

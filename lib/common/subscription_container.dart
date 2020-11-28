@@ -28,20 +28,40 @@ class SubscriptionContainer extends StatelessWidget {
     
      child: Stack(
        children: <Widget>[
-         Image.asset(imagePath, height: height * 0.6/4, width: width-32, fit: BoxFit.fitWidth,),
-         Row(
-           children: <Widget> [
-             Text(
-               text, 
-               style: TextStyles.subscriptionTextStyle,
+         ClipRRect(
+           borderRadius: BorderRadius.circular(8) ,
+           child: ColorFiltered(
+             colorFilter: ColorFilter.mode(
+               Colors.black.withOpacity(0.5), 
+               BlendMode.srcATop,
               ),
-             Spacer(),
-             Text(
-               "\$$amount", 
-               style: TextStyles.subscriptionAmountTextStyle,
-              ),
-            
-           ],
+              child: Image.asset(
+               imagePath, 
+               height: height * 0.6 / 4, 
+               width: width - 32, 
+               fit: BoxFit.fitWidth,
+               ),
+           )
+            ),
+         Positioned(
+           top: 0,
+           right: 48,
+           left: 48,
+           bottom: 0,
+            child: Row(
+             children: <Widget> [
+               Text(
+                 text, 
+                 style: TextStyles.subscriptionTextStyle,
+                ),
+               Spacer(),
+               Text(
+                 "\$$amount", 
+                 style: TextStyles.subscriptionAmountTextStyle,
+                ),
+              
+             ],
+           ),
          ),
        ],
      ),
