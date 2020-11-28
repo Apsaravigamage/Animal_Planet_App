@@ -40,4 +40,16 @@ class TextStyles {
      color: Colors.white,
      fontFamily: 'Ubuntu',
    );
+   static final TextStyle subscriptionTextStyle = TextStyle(
+     fontSize: 20,
+     fontWeight: FontWeight.w600,
+     color: Colors.white,
+     fontFamily: 'Ubuntu',
+   );
+   static final TextStyle subscriptionAmountTextStyle = TextStyle(
+     fontSize: 26,
+     fontWeight: FontWeight.w600,
+     color: Colors.white,
+     fontFamily: 'Ubuntu',
+   );
  }
