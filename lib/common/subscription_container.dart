@@ -14,25 +14,35 @@ class SubscriptionContainer extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final width = MediaQuery.of(context).size.width;
+    final height = MediaQuery.of(context).size.height;
+
+
+
     return Container(
-      margin: const EdgeInsets.symmetric(horizontal: 16, vertical: 4),
+      margin: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(8),
-        image:DecorationImage(image: AssetImage(imagePath),
-      ),
-     ),
-     child: Row(
-       children: <Widget> [
-         Text(
-           text, 
-           style: TextStyles.subscriptionTextStyle,
-          ),
-         Spacer(),
-         Text(
-           "\$$amount", 
-           style: TextStyles.subscriptionAmountTextStyle,
-          ),
         
+      ),
+    
+     child: Stack(
+       children: <Widget>[
+         Image.asset(imagePath, height: height * 0.6/4, width: width-32, fit: BoxFit.fitWidth,),
+         Row(
+           children: <Widget> [
+             Text(
+               text, 
+               style: TextStyles.subscriptionTextStyle,
+              ),
+             Spacer(),
+             Text(
+               "\$$amount", 
+               style: TextStyles.subscriptionAmountTextStyle,
+              ),
+            
+           ],
+         ),
        ],
      ),
     );
