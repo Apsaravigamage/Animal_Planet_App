@@ -37,7 +37,7 @@ class SubscriptionContainer extends StatelessWidget {
               ),
               child: Image.asset(
                imagePath, 
-               height: height * 0.6 / 4, 
+               height: height * 0.5 / 4, 
                width: width - 32, 
                fit: BoxFit.fitWidth,
                ),
@@ -45,8 +45,8 @@ class SubscriptionContainer extends StatelessWidget {
             ),
          Positioned(
            top: 0,
-           right: 48,
-           left: 48,
+           right: 40,
+           left: 40,
            bottom: 0,
             child: Row(
              children: <Widget> [
