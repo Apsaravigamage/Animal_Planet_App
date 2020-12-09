@@ -12,4 +12,8 @@ class Strings {
   static const String oneMonthSubscription  = "1 month subscription";
   static const String threeMonthSubscription  = "3 month subscription";
   static const String sixMonthSubscription  = "6 month subscription";
+  static const String welcomeToAPlanet  = "Welcome to new APlanet";
+  static const String relatedToYou  = "Related to You";
+
+
 }
