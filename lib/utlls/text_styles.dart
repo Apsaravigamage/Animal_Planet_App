@@ -17,7 +17,7 @@ class TextStyles {
      fontFamily: 'Ubuntu',
    );
     static final TextStyle bigHeaderTextStyle = TextStyle(
-     fontSize: 60,
+     fontSize: 40,
      fontWeight: FontWeight.w900,
      color: Colors.white,
      fontFamily: 'Ubuntu',
@@ -50,6 +50,19 @@ class TextStyles {
      fontSize: 26,
      fontWeight: FontWeight.w600,
      color: Colors.white,
+     fontFamily: 'Ubuntu',
+   );
+   static final TextStyle titleTextStyle = TextStyle(
+     fontSize: 24,
+     fontWeight: FontWeight.w700,
+     color: Colors.white,
+     fontFamily: 'Ubuntu',
+   );
+   static final TextStyle body2TextStyle = TextStyle(
+     fontSize: 16,
+     letterSpacing: 1.3,
+     fontWeight: FontWeight.w400,
+     color: Colors.white.withOpacity(0.5),
      fontFamily: 'Ubuntu',
    );
  }

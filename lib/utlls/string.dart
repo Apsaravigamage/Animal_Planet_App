@@ -14,6 +14,14 @@ class Strings {
   static const String sixMonthSubscription  = "6 month subscription";
   static const String welcomeToAPlanet  = "Welcome to new APlanet";
   static const String relatedToYou  = "Related to You";
+  static const String lifeWithATiger  = "Life with a Tiger";
+  static const String wildAnimals  = "Wild Animals";
+  static const String quickCategories = "Quick Categorise";
+  static const String bear  = "BEAR";
+  static const String lion  = "LION";
+  static const String reptiles  = "REPTILES";
+  static const String pets  = "PETS";
+  static const String lorenIpsum  = "Lorem ipsum dolor sit amet, consectetur adiphkkk,uiodi,hk,ieuie.heifedododhe.hfkefj.heijoeh hifiej uhied ijijd eijek efjk ";
 
 
 }

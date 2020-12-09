@@ -18,7 +18,7 @@ class DashboardScreen extends StatelessWidget {
               child: Stack(
                 children: <Widget> [
                   Image.asset(
-                    "assers/elephant.jpg",
+                    "assets/elephant.jpg",
                     width: MediaQuery.of(context).size.width,
                     fit: BoxFit.fitWidth,
                   ),
@@ -62,17 +62,103 @@ class DashboardScreen extends StatelessWidget {
                     padding: const EdgeInsets.symmetric(horizontal: 16, vertical:16,),
                     child:Text(Strings.relatedToYou, style: TextStyles.buttonTextStyle,)
                   ),
+                  Padding(
+                    padding: const EdgeInsets.symmetric(horizontal: 16.0),
+                    child: Row(
+                      children: <Widget>[
+                        Column(
+                          children: <Widget>[
+
+                          ]
+                        )
+                      ],
+                    ),
+                  ),
+                  Padding(
+                    padding: const EdgeInsets.symmetric(horizontal: 16, vertical:16,),
+                    child:Text(Strings.quickCategories, style: TextStyles.titleTextStyle,)
+                  ),
                   Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    mainAxisSize: MainAxisSize.max,
                     children: <Widget>[
                       Column(
-                        children: <Widget>[
-                          
+                        children:<Widget>[
+                          Container(
+                            padding: const EdgeInsets.all(12),
+                            decoration: BoxDecoration(
+                              borderRadius: BorderRadius.circular(8),
+                              color: Color(0xFF8C5835),
+                            ),
+                            child: Image.asset("assets/bear.png", height: 50, width: 50,),
+                          ),
+                          SizedBox(height: 4,),
+                          Text(
+                            Strings.bear,
+                            style: TextStyles.body2TextStyle,
+
+                          )
+                        ]
+                      ),
+                      Column(
+                        children:<Widget>[
+                          Container(
+                            padding: const EdgeInsets.all(12),
+                            decoration: BoxDecoration(
+                              borderRadius: BorderRadius.circular(8),
+                              color: Color(0xFF8C5835),
+                            ),
+                            child: Image.asset("assets/lion.png", height: 50, width: 50,),
+                          ),
+                          SizedBox(height: 4,),
+                          Text(
+                            Strings.lion,
+                            style: TextStyles.body2TextStyle,
+
+                          )
+                        ]
+                      ),
+                      Column(
+                        children:<Widget>[
+                          Container(
+                            padding: const EdgeInsets.all(12),
+                            decoration: BoxDecoration(
+                              borderRadius: BorderRadius.circular(8),
+                              color: Color(0xFF8C5835),
+                            ),
+                            child: Image.asset("assets/reptiles.png", height: 50, width: 50,),
+                          ),
+                          SizedBox(height: 4,),
+                          Text(
+                            Strings.reptiles,
+                            style: TextStyles.body2TextStyle,
+
+                          )
+                        ]
+                      ),
+                      Column(
+                        children:<Widget>[
+                          Container(
+                            padding: const EdgeInsets.all(12),
+                            decoration: BoxDecoration(
+                              borderRadius: BorderRadius.circular(8),
+                              color: Color(0xFF8C5835),
+                            ),
+                            child: Image.asset("assets/pets.png", height: 50, width: 50,),
+                          ),
+                          SizedBox(height: 4,),
+                          Text(
+                            Strings.pets,
+                            style: TextStyles.body2TextStyle,
+
+                          )
                         ]
                       )
                     ],
-                  )
+                  ),
                 ],
               ),
+              
             ),
           ),
         ],

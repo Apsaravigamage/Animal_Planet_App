@@ -1,5 +1,6 @@
 
 import 'package:animal_planet_app/common/custom_app_bar.dart';
+import 'package:animal_planet_app/screens/dashboard_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:animal_planet_app/utlls/string.dart';
 import 'package:animal_planet_app/utlls/text_styles.dart';
@@ -60,7 +61,7 @@ class ChoosePlanScreen extends StatelessWidget {
               onTap: () {
                 Navigator.of(context).push(
                   MaterialPageRoute(
-                    builder: (context) => ChoosePlanScreen(),
+                    builder: (context) => DashboardScreen(),
                   ),
                 );
               },
